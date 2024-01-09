@@ -1,0 +1,151 @@
+
+:root {
+    --darkPurple: #412050;
+    --lightPurple: #9574A9;
+    --gray: #1E1E1E;
+    --white: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.headerContainer{
+    padding-top: 30px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--darkPurple);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerContainer img {
+    height: auto;
+    width: auto;
+}
+
+.headerButtons {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerButtons p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--white);
+    margin: 40px;
+}
+
+.headerButtons {
+    text-decoration: none;
+}
+
+.buttonDownload p{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--lightPurple);
+}
+
+.bannerContainer {
+    background-color: var(--darkPurple);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.textBanner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 50px;
+}
+
+.textBanner p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.imgBanner img {
+    margin-top: 20%;
+    width: 602px;
+    height: 621px;
+}
+
+.buttomDownload {
+    background-color: var(--lightPurple);
+    margin-top: 20px;
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: none;
+    color: var(--white);
+}
+
+.buttomDownload a {
+    text-decoration: none;   
+}
+
+.buttomlermais {
+    background-color: var(--white);
+    margin-top: 20px;
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: none;
+    color: var(--darkPurple);
+}
+
+.bannerContainer .textBanner .buttomDownload a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.bannerContainer .textBanner .buttomlermais a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.containerSobreNos {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreNos h1 {
+    color: var(--gray);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.sobreNos p {
+    color: var(--gray);
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
