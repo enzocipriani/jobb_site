@@ -399,7 +399,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .containerRecursos img {
@@ -479,7 +479,7 @@ html {
     margin-left: 20%;
     margin-right: 20%;
     justify-content: space-between;
-    margin-bottom: 300px;
+    margin-bottom: 80px;
     justify-content: center;
     align-items: center;
 }
@@ -558,4 +558,267 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding-left: 10px;
+}
+
+.containerFooter {
+    background-color: var(--darkPurple);
+    width: 100%;
+    
+}
+
+.titleContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titleContato h1 {
+    margin-top: 60px;
+    color: var(--lightGray);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.titleContato img {
+    padding: 20px 0;
+    width: 50px;
+    max-width: 90%;
+}
+
+.titleContato p {
+    text-align: center;
+    width: 440px;
+    color: var(--lightGray);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containerContato {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formsContato {
+    border: var(--lightPurple) 1px solid;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+
+.formsContato h2 {
+    color: var(--lightGray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.formsContato input {
+    background-color: transparent;
+    border: var(--lightGray) solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+    width: 300px;
+    color: var(--lightGray);
+}
+
+.formsContato input::placeholder {
+    color: var(--lightGray);
+    height: 120px;
+}
+
+.inputbox {
+  position: relative;
+  width: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--lightGray);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: var(--lightGray);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: var(--lightGray);
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--lightPurple);
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+
+.buttomSendContato {
+    margin-top: 20px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--lightPurple);
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.buttomSendContato:hover {
+    background-color: #1d0727;
+}
+
+.buttomSendContato a {
+    text-decoration: none;
+    border-radius: 50%;
+    background: #412050;
+    box-shadow:  20px 20px 31px #2f173a,
+             -20px -20px 31px #532966;  
+}
+
+.buttomSendContato button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--lightGray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contatoLinks {
+    border: var(--lightPurple) 1px solid;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.contatoLinks h2 {
+    color: var(--lightGray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.iconsContato {
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.iconsContato i {
+    color: var(--lightGray);
+    font-size: 40px;
+}
+
+.numeroContato {
+    display: flex;
+    flex-direction: column;
+}
+
+.numeroContato h4 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    color: var(--lightGray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.redesSociais {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.redesSociais i {
+    color: var(--lightGray);
+    margin: 20px;
+    border: var(--lightPurple) 1px solid;
+    padding: 20px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociais i:hover {
+    transition: all 0.5s;
+    background-color: #1d0727;
+}
+
+.redesSociais a {
+    text-decoration: none;
+}
+
+.dev {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dev p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--lightPurple);
+    font-size: 15px;
+}
+
+.dev a {
+    text-decoration: none;
+    color: #aa8dbc;
 }
