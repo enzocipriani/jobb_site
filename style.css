@@ -14,23 +14,25 @@
 }
   
 body {
-    background-color: var(--lightGray);
-    
+    background-color: var(--lightGray); 
 }
 
-a {
-    text-decoration: none;
-}
+html {
+    scroll-behavior: smooth;
+  }
+
 
 
 .headerContainer{
     padding-top: 30px;
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     background-color: var(--darkPurple);
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: #9574a97f solid 1px;
+    padding-bottom: 20px;
 }
 
 .headerContainer img {
@@ -38,20 +40,31 @@ a {
     width: auto;
 }
 
+.headerButtons a {
+    text-decoration: none;
+}
+
 .headerButtons {
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
+.headerButtons p:hover {
+    transition: all 0.5s;
+    background-color: #1d0727;
+    border-radius: 10px;
+}
+
 .headerButtons p {
+    padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: var(--white);
     margin: 40px;
 }
 
-.headerButtons {
+.buttonDownload {
     text-decoration: none;
 }
 
@@ -86,7 +99,7 @@ a {
 }
 
 .imgBanner img {
-    margin-top: 20%;
+    margin-bottom: -20%;
     width: 602px;
     height: 621px;
 }
@@ -95,39 +108,53 @@ a {
     background-color: var(--lightPurple);
     margin-top: 20px;
     width: 160px;
-    height: 35px;
+    height: 40px;
     border-radius: 10px;
     margin-right: 20px;
     border: none;
     color: var(--white);
+    transition: all 0.3s;
 }
 
-.buttomDownload a {
+ .buttomDownload a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--lightGray);
+    text-decoration: none;   
+}
+
+.buttomDownload:hover {
+    background-color: #1d0727;
     text-decoration: none;   
 }
 
 .buttomlermais {
+    transition: all 0.3s;
     background-color: var(--lightGray);
     margin-top: 20px;
     width: 160px;
-    height: 35px;
+    height: 40px;
     border-radius: 10px;
     margin-right: 20px;
     border: none;
+}
+
+.buttomlermais a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
     color: var(--darkPurple);
 }
 
-.bannerContainer .textBanner .buttomDownload a {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+.buttomlermais:hover {
+    background-color: #1d0727;
 }
 
-.bannerContainer .textBanner .buttomlermais a {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
+.buttomlermais:hover a {
+    color: var(--lightGray);
+ }
 
 .containerSobreNos {
     margin: 5%;
@@ -211,6 +238,7 @@ a {
 }
 
 .buttomDownload_2 {
+    transition: all 0.3s;
     cursor: pointer;
     background-color: var(--lightPurple);
     margin-top: 20px;
@@ -224,13 +252,23 @@ a {
     font-weight: 800;
 }
 
+.buttomDownload_2 a {
+    text-decoration: none;
+    color: var(--lightGray);
+}
+
 .buttomDownload_2:hover {
     background-color: var(--white);
     color: var(--lightPurple);
     border: #9574A9 solid 1px;
 }
 
+.buttomDownload_2:hover a {
+    color: var(--lightPurple);
+}
+
 .buttomlermais_2 {
+    transition: all 0.3s;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     cursor: pointer;
@@ -247,6 +285,15 @@ a {
 .buttomlermais_2:hover {
     background-color: var(--lightPurple);
     color: var(--white);
+}
+
+.buttomlermais_2:hover a {
+    color: var(--lightGray);
+}
+
+.buttomlermais_2 a {
+    text-decoration: none;
+    color: var(--lightPurple);
 }
 
 .containerDicas {
@@ -307,7 +354,7 @@ a {
 }
 
 .containerTitleRecursos {
-    margin: 5%;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +392,7 @@ a {
 }
 
 .containerRecursos {
-    padding: 30px;
+    margin-top: 40px;
     margin-left: 15%;
     margin-right: 15%;
     display: flex;
@@ -356,8 +403,9 @@ a {
 }
 
 .containerRecursos img {
-    height: 550px;
-    padding-left: 40px;   
+    height: 500px;
+    padding-left: 40px;  
+    padding-bottom: 40px; 
 }
 
 .containerColumn {
@@ -365,36 +413,6 @@ a {
     display: flex;
 }
 
-
-.blocoRecursos {
-    padding: 20px;
-    background: rgb(65,32,80);
-    background: linear-gradient(90deg, rgba(65,32,80,1) 31%, rgba(104,68,125,1) 100%);
-    width: 350px;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.blocoRecursos i {
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: var(--lightGray);
-}
-
-.blocoRecursos h1 {
-    color: var(--lightGray);
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.blocoRecursos p {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--lightGray);
-    font-size: 15px;
-    
-}
 
 .card {
     box-sizing: border-box;
@@ -413,16 +431,16 @@ a {
     justify-content: center;
     user-select: none;
     font-weight: bolder;
-    
+    margin: 25px;
   }
 
   .card i {
-    color: var(--gray);
+    color: var(--darkPurple);
     font-size: 25px;
   }
 
   .card h1 {
-    color: var(--gray);
+    color: var(--darkPurple);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -443,3 +461,101 @@ a {
   .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
+
+  .containerDownload {
+    height: 460px;
+    border-radius: 28px;
+    background: #F8F8F8;
+    box-shadow:  5px 5px 15px #9f9f9f,
+             -5px -5px 15px #ffffff;    
+    background-color: rgba(var(--darkPurple), 0.5); /* Ajuste a opacidade conforme necessário */
+    background-image: url('./src/files/banner_download.png');
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-attachment: scroll; 
+    /* background-attachment: fixed;  */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: space-between;
+    margin-bottom: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.recursosIncriveis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleDowload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titleDowload h1 {
+    margin-top: 60px;
+    color: var(--lightGray);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.titleDowload img {
+    padding: 20px 0;
+    width: 50px;
+    max-width: 90%;
+}
+
+.titleDowload p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--lightGray);
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+
+.containerBotoes button{
+    transition: all 0.3s;
+    width: 170px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: transparent;
+    border: var(--lightGray) solid 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.containerBotoes button:hover {
+    background-color: var(--lightPurple);
+}
+
+.flexbotoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 8px;
+}
+
+.flexbotoes i {
+    font-size: 30px;
+    color: var(--lightGray);
+}
+
+.flexbotoes h4, h3 {
+    color: var(--lightGray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
