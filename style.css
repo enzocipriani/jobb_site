@@ -145,7 +145,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-decoration: none;
-    color: var(--darkPurple);
+    color: var(--lightPurple);
 }
 
 .buttomlermais:hover {
@@ -343,6 +343,8 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
 }
 
 .dica p {
