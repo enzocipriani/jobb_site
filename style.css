@@ -123,6 +123,7 @@ html {
 }
 
 .imgBanner img {
+    pointer-events: none;
     animation: 2s ease-in 0s 1 fadeIn;
     margin-bottom: -20%;
     width: 602px;
@@ -215,6 +216,7 @@ html {
 }
 
 .sobreNos img {
+    pointer-events: none;
     padding: 20px 0;
     width: 50px;
     max-width: 90%;
@@ -236,6 +238,7 @@ html {
 }
 
 .containerMobileApp img {
+    pointer-events: none;
     height: 550px;
     padding-left: 40px;   
 }
@@ -404,6 +407,7 @@ html {
 }
 
 .recursosIncriveis img {
+    pointer-events: none;
     padding: 20px 0;
     width: 50px;
     max-width: 90%;
@@ -431,6 +435,7 @@ html {
 }
 
 .containerRecursos img {
+    pointer-events: none;
     height: 500px;
     padding-left: 40px;  
     padding-bottom: 40px; 
@@ -535,6 +540,7 @@ html {
 }
 
 .titleDowload img {
+    pointer-events: none;
     padding: 20px 0;
     width: 50px;
     max-width: 90%;
@@ -611,6 +617,7 @@ html {
 }
 
 .titleContato img {
+    pointer-events: none;
     padding: 20px 0;
     width: 50px;
     max-width: 90%;

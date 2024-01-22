@@ -30,6 +30,7 @@ function createIcons() {
 function stopAnimation() {
     const iconContainer = document.getElementById('iconContainer');
 
+
     iconContainer.classList.add('fadeOut');
 
     setTimeout(function() {
