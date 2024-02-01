@@ -280,31 +280,40 @@
                 <h2>
                     Envie seu email
                 </h2>
-                <div class="inputbox">
-                    <input type="text" required="required" maxlength="200">
-                    <span>Nome</span>
-                    <i></i>
-                </div>
+                <form id="myForm">
+                    
+            
+                    <div class="inputbox">
+                        <input type="text" required="required" maxlength="50" required id="input1" oninput="sincronizarInputName(this.value)">
+                        <span>Nome</span>
+                        <i></i>
+                    </div>
 
-                <div class="inputbox">
-                    <input type="email" required="required" maxlength="200">
-                    <span>Email</span>
-                    <i></i>
-                </div>
+                    <div class="inputbox">
+                        <input type="email" required="required" maxlength="100" required id="input3" oninput="sincronizarInputEmail(this.value)">
+                        <span>Email</span>
+                        <i></i>
+                    </div>
 
-                <div class="inputbox">
-                    <input type="text" required="required" maxlength="300">
-                    <span>Mensagem</span>
-                    <i></i>
-                </div>
+                    <div class="inputbox">
+                        <input type="text" required="required" maxlength="300" required id="input5" oninput="sincronizarInputText(this.value)">
+                        <span>Mensagem</span>
+                        <i></i>
+                    </div>
 
-                <a class="buttomSendContato">
-                    <button>
+                    <button class="buttomSendContato" type="submit" onclick="enviarFormulario()">
                         Enviar
                     </button>
-                </a>
-                   
-    
+
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="Nome" required id="input2" style="display: none;">
+                    <input type="email" name="Email" required id="input4" style="display: none;">
+                    <input type="text" name="Mensagem" required id="input6" style="display: none;">
+
+                </form>     
+        
             </div>
             
             <div class="contatoLinks">

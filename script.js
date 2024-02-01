@@ -41,3 +41,39 @@ function stopAnimation() {
         iconContainer.classList.remove('fadeOut');
     }, 1000); 
 }
+
+function sincronizarInputName(valor) {
+    document.getElementById('input2').value = valor;
+}
+
+function sincronizarInputEmail(valor2) {
+    document.getElementById('input4').value = valor2;
+}
+
+function sincronizarInputText(valor3) {
+    document.getElementById('input6').value = valor3;
+}
+
+function enviarFormulario() {
+    // Obtém os valores dos inputs
+    var nome = document.getElementById('input1').value;
+    var email = document.getElementById('input3').value;
+    var mensagem = document.getElementById('input5').value;
+
+    // Atribui os valores aos inputs ocultos
+    document.getElementById('input2').value = nome;
+    document.getElementById('input4').value = email;
+    document.getElementById('input6').value = mensagem;
+
+    // Envia o formulário usando a API fetch
+    fetch('https://formsubmit.co/5471f23ca7acc88b5e22e017e61cac44', {
+        method: 'POST',
+        body: new FormData(document.getElementById('myForm'))
+    }).then(response => {
+        // Trata a resposta, se necessário
+        console.log(response);
+        // Aqui você pode adicionar lógica adicional, se necessário
+    }).catch(error => {
+        console.error('Erro ao enviar formulário:', error);
+    });
+}
