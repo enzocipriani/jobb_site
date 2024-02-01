@@ -446,7 +446,6 @@ html {
     display: flex;
 }
 
-
 .card {
     box-sizing: border-box;
     width: 530px;
@@ -464,36 +463,90 @@ html {
     justify-content: center;
     user-select: none;
     font-weight: bolder;
-    margin: 25px;
-  }
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
-  .card i {
+.card i {
     color: var(--darkPurple);
     font-size: 25px;
-  }
+}
 
-  .card h1 {
+.card h1 {
     color: var(--darkPurple);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 25px;
-  }
+}
 
-  .card p {
+.card p {
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 15px;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     border: 1px solid var(--darkPurple);
     transform: scale(1.05);
-  }
-  
-  .card:active {
+}
+
+.card:active {
     transform: scale(0.95) rotateZ(1.7deg);
-  }
+}
+
+
+.card1 {
+    box-sizing: border-box;
+    width: 530px;
+    height: 134px;
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.154);
+    border: 1px solid var(--lightPurple);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.135);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: -100px;
+}
+
+.card1 i {
+    color: var(--darkPurple);
+    font-size: 25px;
+}
+
+.card1 h1 {
+    color: var(--darkPurple);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.card1 p {
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card1:hover {
+    border: 1px solid var(--darkPurple);
+    transform: scale(1.05);
+}
+
+.card1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
 
   .containerDownload {
     height: 460px;
@@ -897,3 +950,21 @@ html {
     opacity: 0; 
     transform: translateY(100vh);
 }
+
+/* @media only screen and (max-width: 600px) {
+   body {
+    background-color: red;
+   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1308px) {
+    body {
+     background-color: green;
+    }
+ }
+
+ @media only screen and (min-width: 1309px) {
+    body {
+     background-color: blue;
+    }
+ } */
