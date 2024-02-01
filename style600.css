@@ -56,8 +56,8 @@
         height: 620px;
         display: flex;
         flex-direction: column;
-        padding-left: 10%;
-        padding-right: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
         align-items: center;
         padding-top: 20px;
     }
@@ -625,11 +625,10 @@
         padding-left: 10px;
     }
 
+
     .containerFooter {
         background-color: var(--darkPurple);
         width: 100%;
-        display: none;
-        
     }
 
     .titleContato {
@@ -651,32 +650,32 @@
     .titleContato img {
         pointer-events: none;
         padding: 20px 0;
-        width: 50px;
+        width: 30px;
         max-width: 90%;
     }
 
     .titleContato p {
+        margin-left: 7%;
+        margin-right: 7%;
         text-align: center;
-        width: 440px;
+        width: 300px;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
     }
 
     .containerContato {
-        margin-top: 50px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: 50px 20px 0 20px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     .formsContato {
         border: var(--lightPurple) 1px solid;
-        padding: 40px;
+        padding: 25px;
+        margin-bottom: 60px;
         border-radius: 15px;
         display: flex;
-        width: 400px;
+        width: 350px;
         flex-direction: column;
     }
 
@@ -796,6 +795,7 @@
         border: none;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
         font-weight: 800;
         text-transform: uppercase;
     }
@@ -806,7 +806,7 @@
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 350px;
     }
 
     .contatoLinks h2 {
@@ -839,7 +839,13 @@
         margin-left: 20px;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
         font-weight: 500;
+    }
+
+    .numeroContato h4 a {
+        color: var(--lightGray); 
+        text-decoration: none;
     }
 
     .redesSociais {
@@ -880,6 +886,9 @@
     }
 
     .dev p {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
         font-family: 'Montserrat', sans-serif;
         color: var(--lightPurple);
         font-size: 15px;
