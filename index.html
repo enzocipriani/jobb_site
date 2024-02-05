@@ -282,9 +282,7 @@
                 </h2>
                 <form action="https://formsubmit.co/contato@jobbapp.com" method="POST">
 
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://www.jobbapp.com">
-                    <input type="hidden" name="_template" value="table">
+                   
                     
                     <div class="inputbox">
                         <input type="text" required="required" maxlength="50" required id="input1" oninput="sincronizarInputName(this.value)">
@@ -311,6 +309,10 @@
                     <button class="buttomSendContato" type="submit">
                         Enviar
                     </button>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://www.jobbapp.com">
+                    <input type="hidden" name="_template" value="table">
 
                 </form>     
         
