@@ -282,9 +282,10 @@
                 <h2>
                     Envie seu email
                 </h2>
-                <form id="myForm">
+                <form action="https://formsubmit.co/contato@jobbapp.com" method="POST">
+
+                   
                     
-            
                     <div class="inputbox">
                         <input type="text" required="required" maxlength="50" required id="input1" oninput="sincronizarInputName(this.value)">
                         <span>Nome</span>
@@ -303,16 +304,17 @@
                         <i></i>
                     </div>
 
-                    <button class="buttomSendContato" type="submit" onclick="enviarFormulario()">
+                    <input type="text" name="name" required id="input2" style="display: none;">
+                    <input type="email" name="email" required id="input4" style="display: none;">
+                    <input type="text" name="text" required id="input6" style="display: none;">
+
+                    <button class="buttomSendContato" type="submit">
                         Enviar
                     </button>
 
                     <input type="hidden" name="_captcha" value="false">
-                    
+                    <input type="hidden" name="_next" value="https://www.jobbapp.com">
                     <input type="hidden" name="_template" value="table">
-                    <input type="text" name="Nome" required id="input2" style="display: none;">
-                    <input type="email" name="Email" required id="input4" style="display: none;">
-                    <input type="text" name="Mensagem" required id="input6" style="display: none;">
 
                 </form>     
         
@@ -333,8 +335,8 @@
                 <div class="iconsContato">
                     <i class="fa-solid fa-globe"></i>
                     <div class="numeroContato">
-                        <h4>contato@jobb.com.br</h4>
-                        <h4>jobb.com.br</h4>
+                        <h4>contato@jobbapp.com</h4>
+                        <h4>jobbapp.com</h4>
                     </div>
                 </div>
 
