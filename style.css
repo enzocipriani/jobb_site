@@ -1,7 +1,7 @@
 
 :root {
-    --darkPurple: #412050;
-    --lightPurple: #9574A9;
+    --darkBlue: #040333;
+    --lightBlue: #1B98E0;
     --gray: #1E1E1E;
     --white: #ffff;
     --lightGray: #F8F8F8;
@@ -48,10 +48,10 @@ html {
     height: 100px;
     display: flex;
     flex-direction: row;
-    background-color: var(--darkPurple);
+    background-color: var(--darkBlue);
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: #9574a97f solid 1px;
+    border-bottom: #1B98E0 solid 1px;
     padding-bottom: 20px;
 }
 
@@ -72,7 +72,7 @@ html {
 
 .headerButtons p:hover {
     transition: all 0.5s;
-    background-color: #1d0727;
+    background-color: #6496e8;
     border-radius: 10px;
 }
 
@@ -91,11 +91,11 @@ html {
 .buttonDownload p{
     text-decoration: none;
     padding: 10px;
-    background-color: var(--lightPurple);
+    background-color: var(--lightBlue);
 }
 
 .bannerContainer {
-    background-color: var(--darkPurple);
+    background-color: var(--darkBlue);
     height: 600px;
     width: 100%;
     display: flex;
@@ -131,7 +131,7 @@ html {
 }
 
 .buttomDownload {
-    background-color: var(--lightPurple);
+    background-color: var(--lightBlue);
     margin-top: 20px;
     width: 160px;
     height: 40px;
@@ -151,7 +151,7 @@ html {
 }
 
 .buttomDownload:hover {
-    background-color: #1d0727;
+    background-color: #6496e8;
     text-decoration: none;   
 }
 
@@ -171,11 +171,11 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-decoration: none;
-    color: var(--lightPurple);
+    color: var(--lightBlue);
 }
 
 .buttomlermais:hover {
-    background-color: #1d0727;
+    background-color: #6496e8;
 }
 
 .buttomlermais:hover a {
@@ -269,7 +269,7 @@ html {
 .buttomDownload_2 {
     transition: all 0.3s;
     cursor: pointer;
-    background-color: var(--lightPurple);
+    background-color: var(--lightBlue);
     margin-top: 20px;
     width: 160px;
     height: 35px;
@@ -288,12 +288,12 @@ html {
 
 .buttomDownload_2:hover {
     background-color: var(--white);
-    color: var(--lightPurple);
-    border: #9574A9 solid 1px;
+    color: var(--lightBlue);
+    border: #6496e8 solid 1px;
 }
 
 .buttomDownload_2:hover a {
-    color: var(--lightPurple);
+    color: var(--lightBlue);
 }
 
 .buttomlermais_2 {
@@ -307,12 +307,12 @@ html {
     height: 35px;
     border-radius: 10px;
     margin-right: 20px;
-    color: var(--lightPurple);
-    border: var(--lightPurple) solid 1px;
+    color: var(--lightBlue);
+    border: var(--lightBlue) solid 1px;
 }
 
 .buttomlermais_2:hover {
-    background-color: var(--lightPurple);
+    background-color: var(--lightBlue);
     color: var(--white);
 }
 
@@ -322,7 +322,7 @@ html {
 
 .buttomlermais_2 a {
     text-decoration: none;
-    color: var(--lightPurple);
+    color: var(--lightBlue);
 }
 
 .containerDicas {
@@ -330,7 +330,7 @@ html {
     background: #F8F8F8;
     box-shadow:  5px 5px 28px #d7d7d7,
                 -5px -5px 28px #ffffff;
-    background-color: var(--darkPurple);
+    background-color: var(--darkBlue);
     display: flex;
     flex-direction: row;
     margin-left: 20%;
@@ -353,9 +353,9 @@ html {
 
 .dica i {
     border-radius: 50%;
-    background: #412050;
-    box-shadow:  20px 20px 31px #2f173a,
-             -20px -20px 31px #532966;  
+    background: #040333;
+    box-shadow:  25px 25px 50px #020114,
+             -25px -25px 50px #060552;
     width: 90px;
     height: 90px;
     align-items: center;
@@ -452,7 +452,7 @@ html {
     height: 134px;
     padding: 20px;
     background: rgba(217, 217, 217, 0.154);
-    border: 1px solid var(--lightPurple);
+    border: 1px solid var(--lightBlue);
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.135);
     backdrop-filter: blur(6px);
     border-radius: 17px;
@@ -470,12 +470,12 @@ html {
 }
 
 .card i {
-    color: var(--darkPurple);
+    color: var(--darkBlue);
     font-size: 25px;
 }
 
 .card h1 {
-    color: var(--darkPurple);
+    color: var(--darkBlue);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -489,7 +489,7 @@ html {
 }
 
 .card:hover {
-    border: 1px solid var(--darkPurple);
+    border: 1px solid var(--darkBlue);
     transform: scale(1.05);
 }
 
@@ -504,7 +504,7 @@ html {
     height: 134px;
     padding: 20px;
     background: rgba(217, 217, 217, 0.154);
-    border: 1px solid var(--lightPurple);
+    border: 1px solid var(--lightBlue);
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.135);
     backdrop-filter: blur(6px);
     border-radius: 17px;
@@ -521,12 +521,12 @@ html {
 }
 
 .card1 i {
-    color: var(--darkPurple);
+    color: var(--darkBlue);
     font-size: 25px;
 }
 
 .card1 h1 {
-    color: var(--darkPurple);
+    color: var(--darkBlue);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -540,7 +540,7 @@ html {
 }
 
 .card1:hover {
-    border: 1px solid var(--darkPurple);
+    border: 1px solid var(--darkBlue);
     transform: scale(1.05);
 }
 
@@ -554,12 +554,12 @@ html {
     background: #F8F8F8;
     box-shadow:  5px 5px 15px #9f9f9f,
              -5px -5px 15px #ffffff;    
-    background-color: rgba(var(--darkPurple), 0.5); /* Ajuste a opacidade conforme necessário */
+    background-color: rgba(var(--darkBlue), 0.5); /* Ajuste a opacidade conforme necessário */
     background-image: url('./src/files/banner_download.png');
     background-blend-mode: multiply;
     background-size: cover; 
     background-attachment: scroll; 
-    /* background-attachment: fixed;  */
+    background-attachment: fixed; /* podendo tirar se achar que deve */
     display: flex;
     flex-direction: column;
     margin-left: 20%;
@@ -624,7 +624,7 @@ html {
 }
 
 .containerBotoes button:hover {
-    background-color: var(--lightPurple);
+    background-color: var(--lightBlue);
 }
 
 .flexbotoes {
@@ -648,7 +648,7 @@ html {
 }
 
 .containerFooter {
-    background-color: var(--darkPurple);
+    background-color: var(--darkBlue);
     width: 100%;
     
 }
@@ -693,7 +693,7 @@ html {
 }
 
 .formsContato {
-    border: var(--lightPurple) 1px solid;
+    border: var(--lightBlue) 1px solid;
     padding: 40px;
     border-radius: 15px;
     display: flex;
@@ -774,7 +774,7 @@ html {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: var(--lightPurple);
+  background: var(--lightBlue);
   border-radius: 4px;
   transition: 0.5s;
   pointer-events: none;
@@ -788,7 +788,7 @@ html {
 
 
 .buttomSendContato:hover {
-    background-color: #1d0727;
+    background-color: #6496e8;
 }
 
 
@@ -800,7 +800,7 @@ html {
     width: 230px;
     height: 50px;
     border-radius: 10px;
-    background-color: var(--lightPurple);
+    background-color: var(--lightBlue);
     border: none;
     color: var(--lightGray);
     font-family: 'Montserrat', sans-serif;
@@ -809,7 +809,7 @@ html {
 }
 
 .contatoLinks {
-    border: var(--lightPurple) 1px solid;
+    border: var(--lightBlue) 1px solid;
     padding: 40px;
     border-radius: 15px;
     display: flex;
@@ -861,7 +861,7 @@ html {
 .redesSociais i {
     color: var(--lightGray);
     margin: 20px;
-    border: var(--lightPurple) 1px solid;
+    border: var(--lightBlue) 1px solid;
     padding: 20px;
     border-radius: 100%;
     height: 50px;
@@ -874,7 +874,7 @@ html {
 
 .redesSociais i:hover {
     transition: all 0.5s;
-    background-color: #1d0727;
+    background-color: #1B98E0;
 }
 
 .redesSociais a {
@@ -889,13 +889,13 @@ html {
 
 .dev p {
     font-family: 'Montserrat', sans-serif;
-    color: var(--lightPurple);
+    color: var(--lightBlue);
     font-size: 15px;
 }
 
 .dev a {
     text-decoration: none;
-    color: #aa8dbc;
+    color: #1B98E0;
 }
 
 .botaoRain {

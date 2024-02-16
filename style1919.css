@@ -1,15 +1,15 @@
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+
     .headerContainer{
-        padding-top: 60px;
-        height: 120px;
+        padding-top: 30px;
+        height: 100px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: var(--darkBlue);
         justify-content: space-evenly;
         align-items: center;
         border-bottom: #1B98E0 solid 1px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 
     .headerContainer img {
@@ -23,13 +23,13 @@
 
     .headerButtons {
         align-items: center;
-        display: none;
+        display: flex;
         flex-direction: row;
     }
 
     .headerButtons p:hover {
         transition: all 0.5s;
-        background-color: #1B98E0;
+        background-color: #6496e8;
         border-radius: 10px;
     }
 
@@ -38,11 +38,10 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         color: var(--white);
-        margin: 10px;
+        margin: 40px;
     }
 
     .buttonDownload {
-        display: none;
         text-decoration: none;
     }
 
@@ -52,41 +51,19 @@
         background-color: var(--lightBlue);
     }
 
-    .buttonDownloadMobile {
-        text-decoration: none;
-        display: none;
-    }
-
-    .buttonDownloadMobile a{
-        text-decoration: none;
-    }
-
-    .buttonDownloadMobile p{
-        color: var(--white);
-        text-decoration: none;
-        padding: 10px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        background-color: var(--lightBlue);
-    }
-
-
     .bannerContainer {
         background-color: var(--darkBlue);
-        height: 620px;
+        height: 600px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        padding-left: 7%;
-        padding-right: 7%;
+        flex-direction: row;
+        padding-left: 15%;
+        padding-right: 5%;
         align-items: center;
-        padding-top: 20px;
     }
 
     .textBanner {
         animation: 1.5s ease-in 0s 1 fadeIn;
-        align-items: baseline;
-        display: flex;
-        flex-direction: column;
     }
 
     .textBanner h1 {
@@ -97,7 +74,6 @@
     }
 
     .textBanner p {
-        margin-top: 20px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         color: var(--white);
@@ -106,18 +82,18 @@
     .imgBanner img {
         pointer-events: none;
         animation: 2s ease-in 0s 1 fadeIn;
-        display: none;
-        width: 602px;
-        height: 621px;
+        margin-bottom: -20%;
+        width: 552px;
+        height: 571px;
     }
 
     .buttomDownload {
         background-color: var(--lightBlue);
-        margin-top: 25px;
+        margin-top: 20px;
         width: 160px;
         height: 40px;
         border-radius: 10px;
-        margin-right: 0px;
+        margin-right: 20px;
         border: none;
         color: var(--white);
         transition: all 0.3s;
@@ -132,7 +108,7 @@
     }
 
     .buttomDownload:hover {
-        background-color: #1B98E0;
+        background-color: #6496e8;
         text-decoration: none;   
     }
 
@@ -143,7 +119,7 @@
         width: 160px;
         height: 40px;
         border-radius: 10px;
-        margin-right: 0px;
+        margin-right: 20px;
         border: none;
     }
 
@@ -156,24 +132,19 @@
     }
 
     .buttomlermais:hover {
-        background-color: #1B98E0;
+        background-color: #6496e8;
     }
 
     .buttomlermais:hover a {
         color: var(--lightGray);
     }
 
-
     .containerSobreNos {
         animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
+        margin: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .sobreNos{
-        display: flex;
-        flex-direction: column;
     }
 
     .sobreNos h1 {
@@ -189,13 +160,19 @@
         font-family: 'Montserrat', sans-serif;
         color: var(--gray);
         display: flex;
-        margin-left: 7%;
-        margin-right: 7%;
-        text-align: left;
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+    }
+
+    .sobreNos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .sobreNos img {
-        align-items: center;
         pointer-events: none;
         padding: 20px 0;
         width: 50px;
@@ -207,29 +184,27 @@
         background: #F8F8F8;
         box-shadow:  5px 5px 28px #d3d3d3,
                     -5px -5px 28px #ffffff;
-        margin-left: 7%;
-        margin-right: 7%;
+        padding: 30px;
+        margin-left: 15%;
+        margin-right: 15%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 50px;
-        margin-top: 40px;
+        margin-bottom: 100px;
     }
 
     .containerMobileApp img {
         pointer-events: none;
-        height: 400px;
-        padding-left: 10px;
+        height: 550px;
+        padding-left: 40px;   
     }
 
     .textMobileApp h1 {
-        margin-top: 25px;
         color: var(--gray);
+        padding-left: 20px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        padding-left: 10px;
-        align-items: center;
-        text-align: center;
     }
 
     .textMobileApp {
@@ -237,15 +212,13 @@
     }
 
     .textMobileApp p {
-        text-align: left;
-        padding-left: 10px;
         margin-top: 20px;
         color: var(--gray);
+        padding-left: 20px;
         font-family: 'Montserrat', sans-serif;
     }
 
     .containerButtons {
-        text-align: center;
         margin-top: 20px;
         padding-left: 20px;
     }
@@ -256,7 +229,7 @@
         background-color: var(--lightBlue);
         margin-top: 20px;
         width: 160px;
-        height: 45px;
+        height: 35px;
         border-radius: 10px;
         margin-right: 20px;
         color: var(--white);
@@ -266,7 +239,6 @@
     }
 
     .buttomDownload_2 a {
-        font-size: 15px;
         text-decoration: none;
         color: var(--lightGray);
     }
@@ -274,7 +246,7 @@
     .buttomDownload_2:hover {
         background-color: var(--white);
         color: var(--lightBlue);
-        border: #1B98E0 solid 1px;
+        border: #6496e8 solid 1px;
     }
 
     .buttomDownload_2:hover a {
@@ -289,7 +261,7 @@
         background-color: var(--white);
         margin-top: 20px;
         width: 160px;
-        height: 45px;
+        height: 35px;
         border-radius: 10px;
         margin-right: 20px;
         color: var(--lightBlue);
@@ -306,7 +278,6 @@
     }
 
     .buttomlermais_2 a {
-        font-size: 15px;
         text-decoration: none;
         color: var(--lightBlue);
     }
@@ -318,13 +289,13 @@
                     -5px -5px 28px #ffffff;
         background-color: var(--darkBlue);
         display: flex;
-        flex-direction: column;
-        margin-left: 7%;
-        margin-right: 7%;
+        flex-direction: row;
+        margin-left: 15%;
+        margin-right: 15%;
         justify-content: space-between;
         margin-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 20px;
+        padding-left: 20px;
+        padding-right: 40px;
         padding-top: 30px;
         padding-bottom: 30px;
         border-radius: 20px;
@@ -333,22 +304,18 @@
     .dica {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 3px;
-        padding-right: 3px;
+        align-items: center;
+        padding: 20px;
     }
 
     .dica i {
-        align-items: center;
-        margin-left: 10px;
         border-radius: 50%;
         background: #040333;
         box-shadow:  25px 25px 50px #020114,
-             -25px -25px 50px #060552;
+                -25px -25px 50px #060552;
         width: 90px;
         height: 90px;
+        align-items: center;
         justify-content: center;
         display: flex;
         border-radius: 100%;
@@ -358,7 +325,6 @@
     }
 
     .dica h3 {
-        align-items: center;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
@@ -368,12 +334,11 @@
     }
 
     .dica p {
-        margin-left: 10px;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
         justify-content: center;
         display: flex;
-        text-align: left;
+        text-align: center;
     }
 
     .containerTitleRecursos {
@@ -390,8 +355,6 @@
     }
 
     .recursosIncriveis h1 {
-        margin-left: 15%;
-        margin-right: 15%;
         margin-top: 20px;
         color: var(--gray);
         text-align: center;
@@ -412,9 +375,9 @@
         color: var(--gray);
         display: flex;
         justify-content: center;
-        margin-left: 7%;
-        margin-right: 7%;
-        text-align: left;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
     }
 
     .containerRecursos {
@@ -422,17 +385,17 @@
         margin-left: 15%;
         margin-right: 15%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
 
     .containerRecursos img {
         pointer-events: none;
-        height: 370px;
-        padding-left: 15px;  
-        padding-bottom: 5px; 
+        height: 500px;
+        padding-left: 40px;  
+        padding-bottom: 40px; 
     }
 
     .containerColumn {
@@ -440,63 +403,10 @@
         display: flex;
     }
 
-    .card1 {
-        box-sizing: border-box;
-        width: 350px;
-        height: 174px;
-        padding: 20px;
-        background: rgba(217, 217, 217, 0.154);
-        border: 1px solid var(--lightBlue);
-        box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.135);
-        backdrop-filter: blur(6px);
-        border-radius: 17px;
-        cursor: pointer;
-        transition: all 0.5s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        user-select: none;
-        font-weight: bolder;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .card1 i {
-        color: var(--darkBlue);
-        font-size: 25px;
-    }
-
-    .card1 h1 {
-        color: var(--darkBlue);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-    }
-
-    .card1 p {
-        color: var(--gray);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-    }
-    
-    .card1:hover {
-        border: 1px solid var(--darkBlue);
-        transform: scale(1.05);
-    }
-    
-    .card1:active {
-        transform: scale(0.95) rotateZ(1.7deg);
-    }
-    
-
-    /* ----- */
     .card {
         box-sizing: border-box;
-        width: 350px;
-        height: 174px;
+        width: 530px;
+        height: 134px;
         padding: 20px;
         background: rgba(217, 217, 217, 0.154);
         border: 1px solid var(--lightBlue);
@@ -510,10 +420,10 @@
         justify-content: center;
         user-select: none;
         font-weight: bolder;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .card i {
@@ -534,37 +444,94 @@
         font-weight: 400;
         font-size: 15px;
     }
-    
+
     .card:hover {
         border: 1px solid var(--darkBlue);
         transform: scale(1.05);
     }
-    
+
     .card:active {
         transform: scale(0.95) rotateZ(1.7deg);
     }
 
+
+    .card1 {
+        box-sizing: border-box;
+        width: 530px;
+        height: 134px;
+        padding: 20px;
+        background: rgba(217, 217, 217, 0.154);
+        border: 1px solid var(--lightBlue);
+        box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.135);
+        backdrop-filter: blur(6px);
+        border-radius: 17px;
+        cursor: pointer;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        user-select: none;
+        font-weight: bolder;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-left: -100px;
+    }
+
+    .card1 i {
+        color: var(--darkBlue);
+        font-size: 25px;
+    }
+
+    .card1 h1 {
+        color: var(--darkBlue);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .card1 p {
+        color: var(--gray);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .card1:hover {
+        border: 1px solid var(--darkBlue);
+        transform: scale(1.05);
+    }
+
+    .card1:active {
+        transform: scale(0.95) rotateZ(1.7deg);
+    }
+
     .containerDownload {
-        height: 670px;
+        height: 460px;
         border-radius: 28px;
         background: #F8F8F8;
         box-shadow:  5px 5px 15px #9f9f9f,
                 -5px -5px 15px #ffffff;    
-        background-color: rgba(var(--darkBlue), 0.5); 
+        background-color: rgba(var(--darkBlue), 0.5); /* Ajuste a opacidade conforme necessário */
         background-image: url('./src/files/banner_download.png');
         background-blend-mode: multiply;
         background-size: cover; 
         background-attachment: scroll; 
-        /* background-attachment: fixed;  */
+        background-attachment: fixed; /* podendo tirar se achar que deve */
         display: flex;
         flex-direction: column;
-        margin-left: 7%;
-        margin-right: 7%;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-content: space-between;
         margin-bottom: 80px;
+        justify-content: center;
         align-items: center;
     }
 
-  
+    .recursosIncriveis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .titleDowload {
         display: flex;
@@ -574,14 +541,12 @@
 
 
     .titleDowload h1 {
-        margin-top: -91px;
+        margin-top: 60px;
         color: var(--lightGray);
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         margin-bottom: 10px;
-        margin-left: 10%;
-        margin-right: 10%;
     }
 
     .titleDowload img {
@@ -589,7 +554,6 @@
         padding: 20px 0;
         width: 50px;
         max-width: 90%;
-        margin-bottom: 20px;
     }
 
     .titleDowload p {
@@ -597,25 +561,18 @@
         color: var(--lightGray);
         display: flex;
         justify-content: center;
-        margin-left: 7%;
-        margin-right: 7%;
-        text-align: left;
-        margin-bottom: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
     }
 
-
-    .containerBotoes {
-        display: flex;
-        flex-direction: column;
-    }
 
     .containerBotoes button{
-        text-align: center;
         transition: all 0.3s;
-        width: 210px;
+        width: 170px;
         cursor: pointer;
         margin-top: 30px;
-        margin-bottom: 0px;
+        margin-bottom: 60px;
         background-color: transparent;
         border: var(--lightGray) solid 1px;
         margin-left: 20px;
@@ -632,7 +589,7 @@
         flex-direction: row;
         align-items: center;
         text-align: left;
-        justify-content: center;
+        padding: 8px;
     }
 
     .flexbotoes i {
@@ -647,10 +604,10 @@
         padding-left: 10px;
     }
 
-
     .containerFooter {
         background-color: var(--darkBlue);
         width: 100%;
+        
     }
 
     .titleContato {
@@ -672,33 +629,35 @@
     .titleContato img {
         pointer-events: none;
         padding: 20px 0;
-        width: 30px;
+        width: 50px;
         max-width: 90%;
     }
 
     .titleContato p {
-        margin-left: 7%;
-        margin-right: 7%;
-        text-align: left;
-        width: 300px;
+        text-align: center;
+        width: 440px;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
     }
 
     .containerContato {
-        margin: 50px 20px 0 20px;
+        margin-top: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .formsContato {
         border: var(--lightBlue) 1px solid;
-        padding: 25px;
-        margin-bottom: 60px;
+        padding: 40px;
         border-radius: 15px;
         display: flex;
-        width: 340px;
+        width: 400px;
         flex-direction: column;
+        text-align: center;
+        margin-right: 5%;
     }
 
     .formsContato h2 {
@@ -785,39 +744,24 @@
     height: 44px;
     }
 
-    .buttomSendContato {
-        margin-top: 20px;
-        cursor: pointer;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        background-color: var(--lightBlue);
-        margin-left: 15%;
-        margin-right: 15%;
-        height: 50px;
-        border-radius: 10px;
-    }
 
     .buttomSendContato:hover {
-        background-color: #1B98E0;
+        background-color: #6496e8;
     }
 
-    .buttomSendContato a {
-        text-decoration: none;
-        border-radius: 50%;
-        background: #412050;
-        box-shadow:  20px 20px 31px #2f173a,
-                -20px -20px 31px #532966;  
-    }
 
-    .buttomSendContato button{
+    .buttomSendContato {
         cursor: pointer;
-        background-color: transparent;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: 15px;
+        width: 230px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: var(--lightBlue);
         border: none;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
         font-weight: 800;
         text-transform: uppercase;
     }
@@ -828,7 +772,8 @@
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        width: 340px;
+        width: 400px;
+        margin-right: 5%;
     }
 
     .contatoLinks h2 {
@@ -861,13 +806,7 @@
         margin-left: 20px;
         color: var(--lightGray);
         font-family: 'Montserrat', sans-serif;
-        text-decoration: none;
         font-weight: 500;
-    }
-
-    .numeroContato h4 a {
-        color: var(--lightGray); 
-        text-decoration: none;
     }
 
     .redesSociais {
@@ -908,9 +847,6 @@
     }
 
     .dev p {
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
         font-family: 'Montserrat', sans-serif;
         color: var(--lightBlue);
         font-size: 15px;
@@ -960,4 +896,5 @@
         opacity: 0; 
         transform: translateY(100vh);
     }
+
 }

@@ -13,8 +13,8 @@ function createIcons() {
         
         
         const image = document.createElement('img');
-        image.src = './src/files/icon_rain.png';
-        image.alt = './src/files/icon_link.png'; 
+        image.src = './src/files/icon_rain-2.png';
+        image.alt = './src/files/icon-link-2.png'; 
         icon.appendChild(image);
         
         icon.style.left = `${Math.random() * 100}vw`;
