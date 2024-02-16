@@ -14,7 +14,7 @@
 }
   
 body {
-    background-color: var(--lightGray);
+    background-color: #E8F1F2;
 }
 
 html {
@@ -224,7 +224,7 @@ html {
 
 .containerMobileApp {
     border-radius: 28px;
-    background: #F8F8F8;
+    background: #f8f8f898;
     box-shadow:  5px 5px 28px #d3d3d3,
                 -5px -5px 28px #ffffff;
     padding: 30px;
@@ -436,9 +436,11 @@ html {
 
 .containerRecursos img {
     pointer-events: none;
-    height: 500px;
-    padding-left: 40px;  
-    padding-bottom: 40px; 
+    height: 510px;
+    padding-left: 35px;  
+    padding-right: 15px;  
+    padding-bottom: 45px; 
+    
 }
 
 .containerColumn {
@@ -554,11 +556,9 @@ html {
     background: #F8F8F8;
     box-shadow:  5px 5px 15px #9f9f9f,
              -5px -5px 15px #ffffff;    
-    background-color: rgba(var(--darkBlue), 0.5); /* Ajuste a opacidade conforme necessário */
     background-image: url('./src/files/banner_download.png');
     background-blend-mode: multiply;
     background-size: cover; 
-    background-attachment: scroll; 
     background-attachment: fixed; /* podendo tirar se achar que deve */
     display: flex;
     flex-direction: column;
