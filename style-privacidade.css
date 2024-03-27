@@ -1,0 +1,62 @@
+:root {
+    --darkBlue: #040333;
+    --lightBlue: #1B98E0;
+    --gray: #1E1E1E;
+    --white: #ffff;
+    --lightGray: #F8F8F8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: #E8F1F2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.headerContainer{
+    padding-top: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--darkBlue);
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: #1B98E0 solid 1px;
+    padding-bottom: 20px;
+}
+
+.headerContainer img {
+    height: auto;
+    width: auto;
+}
+
+.containerText {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    background-color: var(--white);
+    height: 1920px;
+}
+
+.politica {
+    text-align: center;
+    align-items: center; 
+}
+
+.politica h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
