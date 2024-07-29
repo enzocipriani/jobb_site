@@ -855,7 +855,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 
 .redesSociais i {
@@ -879,6 +879,18 @@ html {
 
 .redesSociais a {
     text-decoration: none;
+}
+
+.links {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px 10px 10px ;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    color: var(--lightGray);
+    margin: 0 12px;
 }
 
 .dev {
@@ -936,6 +948,52 @@ html {
 .fadeOut {
     opacity: 0; 
     transform: translateY(100vh);
+}
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #040333ee;
+    
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.cookie-consent p {
+    font-family: 'Montserrat', sans-serif;
+    flex: 1;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.cookie-consent-link {
+    color: var(--lightBlue);
+}
+
+.cookie-button {
+    background-color: var(--lightGray);
+    color: var(--darkBlue);
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 70px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.cookie-button:hover {
+    background-color: var(--lightBlue);
+    color: var(--white);
 }
 
 /* @media only screen and (max-width: 600px) {

@@ -54,6 +54,17 @@ function sincronizarInputText(valor3) {
     document.getElementById('input6').value = valor3;
 }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptButton = document.getElementById('acceptCookies');
+
+    acceptButton.addEventListener('click', () => {
+        cookieConsent.style.display = 'none';
+    });
+
+
+});
+
 // function enviarFormulario() {
 //     // valores
 //     var nome = document.getElementById('input1').value;

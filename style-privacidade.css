@@ -38,25 +38,25 @@ html {
 }
 
 .containerText {
-    margin-top: 10%;
+    border-radius: 12px;
+    margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
     background-color: var(--white);
-    height: 1920px;
+    height: auto;
 }
 
 .politica {
-    text-align: center;
+    text-align: left;
     align-items: center; 
 }
 
-.politica h1 {
-    padding-top: 20px;
-    padding-left: 20px;
+.politica p {
+    padding: 20px;
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    text-align: justify;
     font-size: 20px;
 }
 

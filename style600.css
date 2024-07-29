@@ -966,4 +966,14 @@
         opacity: 0; 
         transform: translateY(100vh);
     }
+
+    .cookie-consent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cookie-button {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
 }
